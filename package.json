@@ -1,0 +1,16 @@
+{
+  "name": "firestore-dummy-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "insert": "node ./scripts/insert.js",
+    "delete": "node ./scripts/delete.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^11.11.0"
+  }
+}

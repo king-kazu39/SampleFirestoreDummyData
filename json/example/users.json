@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Ichiro",
+        "age": 26,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jiro",
+        "age": 22,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    },
+    {
+        "id": 3,
+        "name": "Saburou",
+        "age": 28,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    },
+    {
+        "id": 4,
+        "name": "Shirou",
+        "age": 29,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    },
+    {
+        "id": 5,
+        "name": "Gorou",
+        "age": 23,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    },
+    {
+        "id": 6,
+        "name": "Tarou",
+        "age": 21,
+        "hobbies": {
+            "soccer": true,
+            "shopping": true
+        },
+        "favoriteMusicGenre": {
+            "jpop": true,
+            "rock": true
+        }
+    }
+]
