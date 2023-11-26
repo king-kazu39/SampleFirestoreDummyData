@@ -35,9 +35,9 @@ ROOT$ npm i
 
 **ServiceKeyの取得方法**
 
-<img src='https://github.com/king-kazu39/SampleFirestoreDummyData/assets/25321380/93c5bc57-82f3-4019-a7a6-e2c547c14d31'>
+以下のスクショの順番通りに操作してサービスアカウントキーを作成する。
 
-<img src='https://github.com/king-kazu39/SampleFirestoreDummyData/assets/25321380/33abb43b-c00d-4c3d-8c6d-e5d5fcf82bd3'>
+<img src='https://github.com/king-kazu39/SampleFirestoreDummyData/assets/25321380/ed4c94fe-aa3b-4bfe-ac40-64ab46a9e849'>
 
 
 ## スクリプト実行
