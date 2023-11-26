@@ -1,6 +1,7 @@
 const db = require('../config/firebaseConfig');
 const path = require('path');
 const fs = require('fs');
+const admin = require('firebase-admin');
 
 // 指定したコレクション内のデータを全削除する関数
 async function deleteCollectionData(collectionName) {
@@ -31,13 +32,26 @@ async function insertData(filePath) {
 
     // JSONファイルの内容を読み込む
     const documents = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    documents.forEach(docData => {
+    documents.forEach((docData, index) => {
         const docRef = collectionRef.doc(); // 新しいドキュメントIDを作成
-        batch.set(docRef, { ...docData, filePath }); // ドキュメントデータにファイルパスを含める
+        const timestamp = createTimestampWithOffset(index);
+        batch.set(docRef, {
+            ...docData,
+            filePath,  // ドキュメントデータにファイルパスを含める
+            createdAt: timestamp,
+            updatedAt: timestamp
+        });
     });
 
     await batch.commit();
     console.log('Data from ' + filePath + ' has been successfully inserted into ' + collectionName);
+}
+
+// 指定されたオフセット量でタイムスタンプを生成するメソッド
+function createTimestampWithOffset(index, timerNumer = 1) {
+    return admin.firestore.Timestamp.fromDate(
+        new Date(new Date().getTime() + index * timerNumer * 60000)
+    );
 }
 
 module.exports = {
